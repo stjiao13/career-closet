@@ -16,3 +16,13 @@ iteration 1开发流程：
    - UIN 长度必须是9，并且必须unique
 
 6. 建立user 和 suit之间的association: add user id to suits。
+
+7. Add secure password.
+
+8. 添加user signup 功能.
+
+累了暂时不写了。。。接下来要做的事：
+
+1. 虽然user和suit建立了联系，但是没有体现在view上，只能在rails console里面
+   设置 “suit.user = User.find(#id)”
+2. login 功能

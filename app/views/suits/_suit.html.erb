@@ -3,12 +3,14 @@
         <th>Suit ID</th>
         <th>Description</th>
         <!-- <th>User</th> -->
+        <th>在借人</th>
     </tr>
     
     <% obj.each do |suit|%>
     <tr>
         <td><%= suit.number %></td>
         <td><%= suit.description %></td>
+        <td><%= suit.user.username if suit.user%></td>
         <!-- <td><#%= article.user.username if article.user%></td> -->
         <td><%= link_to "Show", suit_path(suit) %></td>
         <td><%= link_to "Edit",edit_suit_path(suit) %></td>
