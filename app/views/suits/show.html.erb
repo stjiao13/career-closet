@@ -1,0 +1,11 @@
+<h1>Showing selected Suit</h1>
+
+<p>
+    Suit ID: <%= @suit.number %>
+</p>
+
+<p>
+    Description: <%= @suit.description %>
+</p>
+<%= link_to "Back to Closet", suits_path %> |
+<%= link_to "Edit this suit", edit_suit_path(@suit) %>
