@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+    has_many :suits
     validates :username, presence: true
     validates :UIN, presence: true, uniqueness: true,
               length:{minimum: 9, maximum: 9}

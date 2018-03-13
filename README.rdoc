@@ -14,3 +14,5 @@ iteration 1开发流程：
    - username 必须存在
    - 必须是valide email address (using regex)
    - UIN 长度必须是9，并且必须unique
+
+6. 建立user 和 suit之间的association: add user id to suits。
